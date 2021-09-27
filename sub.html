@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터마틴 서브페이지</title>
+  <link href="font.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/sub.css">
+  
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script>
+
+
+     function CountDownTimer(dday){
+        var countDownDate = new Date(dday).getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          function showRemaining() {
+            if(days < 0) {
+              days = 0;
+              hours = 0;
+              minutes = 0;
+              seconds = 0;
+              clearInterval(x);             
+            }
+            $('.main_day').find('.day').html(days);
+            $('.main_day').find('.time1').html(hours);
+            $('.main_day').find('.minute').html(minutes);
+            $('.main_day').find('.second').html(seconds);
+          }
+          showRemaining();
+        }, 1000);
+
+      }
+      CountDownTimer('2021/12/25 23:59:59');
+
+
+
+
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <h1><a href="#"><img src="img/logo.png" alt="로고이미지">logo</a></h1>
+        <nav>
+        <ul class="clear">
+          <li><a href="#"><img src="img/h-icon1.png"></a></li>
+          <li><a href="#"><img src="img/h-icon2.png"></a></li>
+          <li><a href="#"><img src="img/h-icon3.png"></a></li>
+          <li><a href="#"><img src="img/h-icon4.png"></a></li>
+        </ul>
+        </nav>
+        <div class="nav_btn">
+          <ul class="clear">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">매장찾기</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div><!--nav_btn-->
+        <div class="nav_span"><a href="#"><span>메뉴열기</span><span></span><span></span></a></div><!--nav_span-->
+      </div><!--inner-->
+    </header>
+
+    <div class="visual">
+ 
+      <h2>Collaboration</h2>
+      <div class="main_img"><img src="img/sub_img/visual2.png"></div><!--main_img-->
+      <div class="inner">
+      <div class="main_txt">
+        <a href="#">DM'S x ATMOS</a>
+      </div><!--main_txt-->
+      <div class="main_day">
+        <p class="time"><span class="day" >00</span> : <span class="time1">00</span>  : <span class="minute">00</span> : <span class="second">00</span></p>
+      </div><!--main_date-->
+        <div class="main_hours">
+        <p class="all_today"><span>DAYS</span><span>HOURS</span><span>MINUTES</span><span>SECONDS</span></p>
+      </div><!--main_hours-->
+    </div><!--inner-->
+    </div><!--visual-->
+
+    <div class="content">
+      <div class="inner">
+      <h2>LAUNCHES</h2>
+      <section class="section1 clear">
+        <div class="drm1">
+          <a href="#">
+            <img src="img/sub_img/collabo1.png">
+            <div class="over">
+              <p class="on_buy">구매하기</p>
+            </div><!--on-->
+          </a>
+          <div class="martin_t">
+          <p class="b_txt">닥터마틴 x JJJJOUND</p>
+          <p class="cash1"><span>￦</span>350,000</p>
+          <!-- <div class="martin_color"> -->
+          <span class="black">블랙<img src="img/sub_img/e_black.png"></span>
+          <span class="brown">다크브라운<img src="img/sub_img/e_brown.png"></span>
+          <!-- <div>
+          martin_color -->
+        </div><!--martin_t-->
+        </div><!--drm1-->
+
+        <div class="drm2 clear">
+          <a href="#">
+            <img src="img/sub_img/collabo2.png">
+            <div class="over">
+              <p class="on_buy">구매하기</p>
+            </div><!--on-->
+          </a>
+          <div class="martin_t">
+          <p class="b_txt">닥터마틴 x 바스키아</p>
+          <p class="cash2"><span>￦</span>250,000</p>
+          <!-- <div class="martin_color"> -->
+          <span class="black">블랙<img src="img/sub_img/e_black.png"></span>
+    
+          <!-- </div>
+          martin_color -->
+        </div><!--martin_t-->
+ 
+        </div><!--drm2-->
+      </section><!--section1-->
+
+      <section class="section2 clear">
+        <div class="drm3">
+          <a href="#">
+            <img src="img/sub_img/collabo3.png">
+            <div class="over">
+              <p class="on_buy">구매하기</p>
+            </div><!--on-->
+          </a>
+          <div class="martin_t">
+          <p class="b_txt">닥터마틴 x MIE</p>
+          <p class="cash3"><span>￦</span>320,000</p>
+          <!-- <div class="martin_color"> -->
+          <span class="black">블랙<img src="img/sub_img/e_black.png"></span>
+          <!-- <div>
+          martin_color -->
+        </div><!--martin_t-->
+        </div><!--drm3-->
+
+        <div class="drm4">
+          <a href="#">
+            <img src="img/sub_img/collabo4.png">
+            <div class="over">
+              <p class="on_buy">구매하기</p>
+            </div><!--on-->
+          </a>
+          <div class="martin_t">
+          <p class="b_txt">닥터마틴 x X-GIRL</p>
+          <p class="cash4"><span>￦</span>340,000</p>
+          <!-- <div class="martin_color"> -->
+          <span class="black">블랙<img src="img/sub_img/e_black.png"></span>
+          <!-- <div>
+          martin_color -->
+        </div><!--martin_t-->
+        </div><!--drm4-->
+      </section><!--section2-->
+
+      <section class="section3 clear">
+        <div class="drm5">
+          <a href="#">
+            <img src="img/sub_img/colla5.jpg">
+            <div class="on">
+              <p class="on_buy">CLOSE</p>
+            </div><!--on-->
+          </a>
+          <div class="martin_t">
+          <p class="b_txt">닥터마틴 x CLOT</p>
+          <p class="cash5"><span>￦</span>230,000</p>
+          <!-- <div class="martin_color"> -->
+          <span class="black">블랙<img src="img/sub_img/e_black.png"></span>
+          <!-- <div>
+          martin_color -->
+        </div><!--martin_t-->
+        </div><!--drm5-->
+
+        <div class="drm6">
+          <a href="#">
+            <img src="img/sub_img/colla6.jpg">
+            <div class="on">
+              <p class="on_buy">CLOSE</p>
+            </div><!--on-->
+          </a>
+          <div class="martin_t">
+          <p class="b_txt">닥터마틴 x RLCK OWENS</p>
+          <p class="cash6"><span>￦</span>450,000</p>
+          <!-- <div class="martin_color"> -->
+          <span class="black">블랙<img src="img/sub_img/e_black.png"></span>
+          <span class="beige">베이지<img src="img/sub_img/e_beige.png"></span>
+          <!-- <div>
+          martin_color -->
+        </div><!--martin_t-->
+        </div><!--drm6-->
+      </section><!--section3-->
+
+      <section class="section4 clear">
+        <div class="drm7">
+          <a href="#">
+            <img src="img/sub_img/colla7.jpg">
+            <div class="on">
+              <p class="on_buy">CLOSE</p>
+            </div><!--on-->
+          </a>
+          <div class="martin_t">
+          <p class="b_txt">닥터마틴 x BODEGA</p>
+          <p class="cash7"><span>￦</span>240,000</p>
+          <!-- <div class="martin_color"> -->
+          <span class="black">블랙<img src="img/sub_img/e_black.png"></span>
+          <!-- <div>
+          martin_color -->
+        </div><!--martin_t-->
+        </div><!--drm7-->
+
+        <div class="drm8">
+          <a href="#">
+            <img src="img/sub_img/colla8.jpg">
+            <div class="on">
+              <p class="on_buy">CLOSE</p>
+            </div><!--on-->
+          </a>
+          <div class="martin_t">
+          <p class="b_txt">닥터마틴 x ATMOS</p>
+          <p class="cash8"><span>￦</span>180,000</p>
+          <!-- <div class="martin_color"> -->
+          <span class="black">블랙<img src="img/sub_img/e_black.png"></span>
+          <!-- <div>
+          martin_color -->
+        </div><!--martin_t-->
+        </div><!--drm8-->
+      </section><!--section4-->
+      <a href="#" class="plus"><img src="img/sub_img/plus.png"></a>
+
+    </div><!--inner-->
+    </div><!--content-->
+    
+    <footer>
+      <div class="inner">
+     <div class="f_new">
+       <h2>신규가입 혜택</h2>
+       <p>신규회원으로 가입하고 10% 쿠폰과 최신 소식을 받아보세요.</p>
+       <a href="#">회원가입</a>
+     </div><!--f_new-->
+     <div class="f_bottom">
+       <div class="f_txt">
+        <ul class="clear">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보취급방침</a></li>
+          <li><a href="#">매장찾기</a></li>
+          <li class="f_txt2"><a href="#">CONTACT</a></li>
+          <li><a href="#">사이트맵</a></li>
+        </ul>
+       </div><!--f_txt-->
+
+       <div class="f_sns">
+        <a href="#"><img src="img/f-icon1.png"><img src="img/f-icon1-1.png" class="fff_on"></a>
+        <a href="#"><img src="img/f-icon2.png"><img src="img/f-icon-2_1.png" class="fff_on"></a>
+        <a href="#"><img src="img/f-icon3.png"><img src="img/f-icon3_1.png" class="fff_on"></a>
+        <a href="#"><img src="img/f-icon4.png"><img src="img/f-icon4_3.png" class="fff_on"></a>
+      </div><!--f_sns-->
+
+     </div><!--f_bottom-->
+    </div><!--inner-->
+    </footer>
+
+  <a href="#" class="go_top"><img src="img/up.png"></a>
+  
+
+
+  </div><!--wrap-->
+  
+</body>
+</html>
+
+
+
